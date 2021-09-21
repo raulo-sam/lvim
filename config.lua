@@ -44,9 +44,7 @@ lvim.plugins = {
         {"gosukiwi/vim-atom-dark"},
         {'pseewald/vim-anyfold'},
         {"morhetz/gruvbox"},
-        --Motionhh
         {"mg979/vim-visual-multi"},
-       --lsp
         {"nvim-treesitter/nvim-treesitter-angular" },
         {"KabbAmine/vCoolor.vim"},
         {"ap/vim-css-color"},
@@ -165,8 +163,8 @@ lvim.builtin.dashboard.custom_section = {
     e = {description = {"   Ranger             "}, command = "RnvimrToggle"},
     f = {description = {"   Find File          "}, command = "Telescope find_files", },
     g = {description = {"   Find Word          "}, command = "Telescope live_grep", },
-    j = {description = {"   Kitty Config       "}, command = ":e ~/.config/kitty/kitty.conf" },
-    k = {description = {"   test telescope     "}, command = "lua require 'user.telescope'.grep_notes()" }
+    -- j = {description = {"   Kitty Config       "}, command = ":e ~/.config/kitty/kitty.conf" },
+    -- k = {description = {"   test telescope     "}, command = "lua require 'user.telescope'.grep_notes()" }
     -- g = {description = {"[ g ]   Marks              "}, command = "Telescope marks"},
     -- i = {description = {"[ i ]   Git Status         "}, command = "Telescope git_status" },
     -- k = {description = {"[ k ]   Zshrc              "}, command = ":e ~/.zshrc" },
