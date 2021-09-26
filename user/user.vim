@@ -3,7 +3,10 @@ let g:rnvimr_enable_picker = 1
 let g:rnvimr_draw_border = 1
 let g:rnvimr_hide_gitignore = 1
 let g:rnvimr_border_attr = {'fg': 7, 'bg': -1}
-let g:rnvimr_enable_bw = 1
+let g:rnvimr_enable_bw = 1 
+
+
+let g:AutoPairsShortcutToggle = '<M-a>'
 
 let bufferline = get(g:, 'bufferline', {})
 let bufferline.icons="both"
@@ -60,14 +63,17 @@ set guifont=SauceCodePro\ Nerd\ Font\ Mono:h15
 set ignorecase             " When searching ignore case of words
 set scrolloff=3            " Keep 3 line buffer at top and bottom of the screen
 set termguicolors
-
+set winheight=25
+set winwidth=50
+set noautochdir
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
                                    " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-                                   " config to vim-anyfold
+" config to vim-anyfold
 filetype plugin indent on          " required
 syntax on                          " required
-autocmd Filetype * AnyFoldActivate " activate for all filetypes
 set foldlevel=99                   " close all folds
+highlight NvimTreeFolderIcon guifg=darkOrange3 gui=italic
+

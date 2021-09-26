@@ -17,11 +17,13 @@ lvim.builtin.lualine.inactive_sections = {
 
 -- Colours, maps and icons {{{2
 local colors = {
-    bg               = '#0f1117',
+    -- bg               = '#0f1117',
+    bg               = '#000000',
     modetext         = '#000000',
 
     giticonbg        = '#FF8800',
-    gitbg            = '#5C2C2E',
+    -- gitbg            = '#5C2C2E',
+    gitbg            = '#000000',
     gittext          = '#C5C5C5',
 
     diagerror        = '#F44747',
@@ -30,11 +32,13 @@ local colors = {
     diaginfo         = '#FFCC66',
 
     lspiconbg        = '#68AF00',
-    lspbg            = '#304B2E',
+    -- lspbg            = '#304B2E',
+    lspbg            = '#000000',
     lsptext          = '#C5C5C5',
 
     typeiconbg       = '#FF8800',
-    typebg           = '#5C2C2E',
+    -- typebg           = '#5C2C2E',
+    typebg           = '#000000',
     typetext         = '#C5C5C5',
     typeiconbgrw     = '#229900',
     typetextmodified = '#FF3300',
@@ -54,7 +58,8 @@ local colors = {
     shortbg          = '#DCDCAA',
     shorttext        = '#000000',
 
-    shortrightbg     = '#3F3F3F',
+    -- shortrightbg     = '#3F3F3F',
+    shortrightbg     = '#000000',
     shortrighttext   = '#7C4C4E',
 
     red              = '#D16969',

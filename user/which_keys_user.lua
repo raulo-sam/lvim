@@ -1,7 +1,7 @@
-
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
-
+lvim.builtin.which_key.mappings["P"] = { "<cmd>SymbolsOutline<CR>", "SymbolsOutline" }
+    -- "<cmd>SymbolsOutline<CR>",                          "Menu quick"
 lvim.builtin.which_key.mappings["tr"] = {
   name = "+Trouble",
   t = { "<cmd>TroubleToggle<cr>", "Trouble Toggle" },
@@ -11,7 +11,6 @@ lvim.builtin.which_key.mappings["tr"] = {
   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
-
 lvim.builtin.which_key.mappings["tt"] = {
         name = "Telescope",
   w = { "<cmd>Telescope live_grep<cr>", "search word" },
@@ -31,7 +30,19 @@ lvim.builtin.which_key.mappings["z"] = {
     "<cmd>ZenMode<CR>",                             "Zen Mode"
 }
 lvim.builtin.which_key.mappings["m"] = {
-    "<cmd>SymbolsOutline<CR>",                          "SymbolsOutline"
+    name = "Menu Quick",
+    m= {"<cmd>:call quickui#menu#open()<cr>","Menu bar"},
+    w = {"<cmd>:call quickui#tools#clever_context('w', g:context_menu_w, {})<cr> ","Menu window"},
+    f = {"<cmd>:call quickui#tools#clever_context('f', g:context_menu_f, {})<cr> ","Menu file"},
+}
+lvim.builtin.which_key.mappings["<Space>"] = {
+    "<cmd><Esc><CR>",                "Esc"
+}
+lvim.builtin.which_key.mappings["o"] = {
+    "<cmd>Startify<CR>",                "Starify"
+}
+lvim.builtin.which_key.mappings["ñ"] = {
+    "<cmd>ToggleTerm direction=horizontal<CR>",                "Terminal"
 }
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- lvim.builtin.telescope.on_config_done = function()
