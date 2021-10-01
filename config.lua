@@ -24,12 +24,13 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- add your own keymapping
 lvim.keys.normal_mode["<C-z>"] = ""--prevent to suspend lvim
 lvim.keys.normal_mode["<S-z>"] = ""--prevent to suspend lvim
-lvim.keys.insert_mode["hh"] = "<Esc>"
 lvim.keys.insert_mode["kk"] = "<Esc>"
+lvim.builtin.nvimtree.root_folder_modifier = "~/Documentos"
+
 lvim.builtin.which_key.setup.plugins.presets = {
-          operators = true, -- adds help for operators like d, y, ...
-          motions = true, -- adds help for motions
-          text_objects = true, -- help for text objects triggered after entering an operator
+          operators = false, -- adds help for operators like d, y, ...
+          motions = false, -- adds help for motions
+          text_objects = false, -- help for text objects triggered after entering an operator
           windows = true, -- default bindings on <c-w>
           nav = true, -- misc bindings to work with windows
           z = true, -- bindings for folds, spelling and others prefixed with z
@@ -164,3 +165,7 @@ lvim.plugins = {
     -- BAD: Something.
     -- :TodoQuickFix
     -- :TodoTelescope
+ vim.cmd [[highlight BufferVisibleMod guifg=#d8dee9 guibg=#4c566a]]
+  vim.cmd [[highlight BufferCurrentMod guifg=#d8dee9 guibg=#2e3440 gui=bold]]
+  vim.cmd [[highlight BufferInactiveMod guifg=#d8dee9 guibg=#3b4252]]
+

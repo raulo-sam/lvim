@@ -1,6 +1,7 @@
 
 let g:startify_bookmarks = [ 
             \{'s':'~/.config/lvim/user/startify.vim' },
+            \'~/Documentos/Angular' ,
             \{'c': '~/.config/lvim'},
             \{'g': '~/go/src/proyectos'},
             \{'n': '~/.config/nvim'},

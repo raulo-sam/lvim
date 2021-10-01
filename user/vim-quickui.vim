@@ -220,6 +220,8 @@ let g:context_menu_w = [
 			\ ["--", ],
 			\ ]
 "----------------------------------------------------------------------
+autocmd DirChanged * echo 'Directorio cambiado a:' getcwd()
+
 " hotkey
 "----------------------------------------------------------------------
 " nnoremap <silent><space><space> :call quickui#menu#open()<cr>
